@@ -1,0 +1,113 @@
+
+name: Bug Report
+description: Report something that is not working as expected.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug.
+
+        Please provide as much information as possible so the issue can be reproduced and investigated.
+
+  - type: input
+    id: foundry-version
+    attributes:
+      label: Foundry VTT Version
+      description: Which version of Foundry VTT are you running?
+      placeholder: "e.g. Version 13 Build 351"
+    validations:
+      required: true
+
+  - type: input
+    id: dnd-system-version
+    attributes:
+      label: D&D 5e System Version
+      description: Which version of the D&D 5e game system are you using?
+      placeholder: "e.g. 5.2.4"
+    validations:
+      required: true
+
+  - type: input
+    id: dmg-version
+    attributes:
+      label: Dungeon Master's Guide Version
+      description: Which version of the D&D 5e Dungeon Master's Guide are you using?
+      placeholder: "Leave blank if not applicable"
+    validations:
+      required: false
+
+  - type: input
+    id: phb-version
+    attributes:
+      label: Player's Handbook Version
+      description: Which version of the D&D 5e Player's Handbook are you using?
+      placeholder: "Leave blank if not applicable"
+    validations:
+      required: false
+
+  - type: input
+    id: mm-version
+    attributes:
+      label: Monster Manual Version
+      description: Which version of the D&D 5e Monster Manual are you using?
+      placeholder: "Leave blank if not applicable"
+    validations:
+      required: false
+
+  - type: input
+    id: module-version
+    attributes:
+      label: Module Version
+      description: Which version of this module are you using?
+      placeholder: "e.g. 1.2.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: Which browser are you using?
+      options:
+        - Chrome
+        - Firefox
+        - Edge
+        - Safari
+        - Other
+        - Not applicable
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Description of Issue
+      description: Describe what happened and what you expected to happen.
+      placeholder: Explain the issue in as much detail as possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide numbered steps that someone else can follow to reproduce the issue.
+      placeholder: |
+        1. Open...
+        2. Navigate to...
+        3. Click...
+        4. Observe the issue...
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: Add screenshots, console errors, logs, or anything else that might help.
+      placeholder: Additional details...
+    validations:
+      required: false
